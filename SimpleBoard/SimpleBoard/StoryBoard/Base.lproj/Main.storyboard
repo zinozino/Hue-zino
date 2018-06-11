@@ -21,10 +21,28 @@
                         <viewLayoutGuide key="safeArea" id="0MY-fj-W2w"/>
                     </view>
                     <navigationItem key="navigationItem" title="검색" id="4hN-Wp-LUr"/>
+                    <connections>
+                        <segue destination="JrV-Tw-5Or" kind="modal" identifier="openMenu" id="hYz-5x-ErD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cXv-Vw-rc8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1623.2" y="-185.75712143928038"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="91U-A2-AUA">
+            <objects>
+                <viewController storyboardIdentifier="MenuViewController2" id="JrV-Tw-5Or" customClass="MenuViewController" customModule="SimpleBoard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jj7-P5-YIe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="d4P-p8-g7H"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8xC-a8-p0u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2409" y="-186"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Tw1-nU-RRh">

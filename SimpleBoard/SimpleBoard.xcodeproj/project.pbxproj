@@ -19,6 +19,11 @@
 		2F4F4ACD20BC034500219348 /* SimpleBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4F4ACC20BC034500219348 /* SimpleBoardTests.swift */; };
 		2F4F4AD820BC034500219348 /* SimpleBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4F4AD720BC034500219348 /* SimpleBoardUITests.swift */; };
 		2F4F4AE620BC036400219348 /* TodoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4F4AE520BC036400219348 /* TodoDAO.swift */; };
+		2F79D1A720C4E3B7001BE4B3 /* AFLiveCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F79D1A520C4E3B7001BE4B3 /* AFLiveCollectionViewCell.swift */; };
+		2F79D1A820C4E3B7001BE4B3 /* AFLiveCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F79D1A620C4E3B7001BE4B3 /* AFLiveCollectionViewCell.xib */; };
+		2F81909B20BFBA9D009995CF /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F81909920BFBA9D009995CF /* MenuViewController.swift */; };
+		2F81909E20BFEBCF009995CF /* MenuViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F81909D20BFEBCF009995CF /* MenuViewController2.swift */; };
+		2FA09B4E20BE9BD200F799ED /* JHSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA09B4D20BE9BD200F799ED /* JHSideMenu.swift */; };
 		7C2E102E3674BA32D7F3E791 /* Pods_SimpleBoardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A697927D591ED16F71302052 /* Pods_SimpleBoardUITests.framework */; };
 		E738F797C9E437CB54E0B15C /* Pods_SimpleBoardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2821F259FB80B7179ACE8C4C /* Pods_SimpleBoardTests.framework */; };
 /* End PBXBuildFile section */
@@ -60,6 +65,11 @@
 		2F4F4AD720BC034500219348 /* SimpleBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBoardUITests.swift; sourceTree = "<group>"; };
 		2F4F4AD920BC034500219348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F4F4AE520BC036400219348 /* TodoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDAO.swift; sourceTree = "<group>"; };
+		2F79D1A520C4E3B7001BE4B3 /* AFLiveCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFLiveCollectionViewCell.swift; sourceTree = "<group>"; };
+		2F79D1A620C4E3B7001BE4B3 /* AFLiveCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AFLiveCollectionViewCell.xib; sourceTree = "<group>"; };
+		2F81909920BFBA9D009995CF /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		2F81909D20BFEBCF009995CF /* MenuViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController2.swift; sourceTree = "<group>"; };
+		2FA09B4D20BE9BD200F799ED /* JHSideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHSideMenu.swift; sourceTree = "<group>"; };
 		406EE9AF784CD484BB4711FD /* Pods_SimpleBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7852058F58BC803003BE3EC9 /* Pods-SimpleBoardUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBoardUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleBoardUITests/Pods-SimpleBoardUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A1044EE53C3DF8AD9D853C94 /* Pods-SimpleBoardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBoardTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleBoardTests/Pods-SimpleBoardTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -122,15 +132,13 @@
 		2F4F4AB620BC034400219348 /* SimpleBoard */ = {
 			isa = PBXGroup;
 			children = (
-				2F4F4AB720BC034400219348 /* AppDelegate.swift */,
-				2F0FB31820BCDE6F0038A5B3 /* .swiftlint.yml */,
-				2F0FB31520BCD8FB0038A5B3 /* NetworkManager.swift */,
-				2F4F4ABB20BC034400219348 /* Main.storyboard */,
-				2F0FB31C20BD3F510038A5B3 /* Color_extension.swift */,
-				2F0FB31A20BD38830038A5B3 /* SearchViewController.swift */,
-				2F4F4AE520BC036400219348 /* TodoDAO.swift */,
-				2F4F4ABE20BC034500219348 /* Assets.xcassets */,
-				2F4F4AC020BC034500219348 /* LaunchScreen.storyboard */,
+				2FA09B4920BE9AAB00F799ED /* Resource */,
+				2FA09B4A20BE9AB600F799ED /* Network */,
+				2FA09B4820BE9A9400F799ED /* Extension */,
+				2FA09B4720BE9A8500F799ED /* ViewController */,
+				2FA09B4B20BE9AC000F799ED /* DataCenter */,
+				2FA09B4C20BE9AC800F799ED /* StoryBoard */,
+				2FA09B4D20BE9BD200F799ED /* JHSideMenu.swift */,
 				2F4F4AC320BC034500219348 /* Info.plist */,
 			);
 			path = SimpleBoard;
@@ -152,6 +160,61 @@
 				2F4F4AD920BC034500219348 /* Info.plist */,
 			);
 			path = SimpleBoardUITests;
+			sourceTree = "<group>";
+		};
+		2FA09B4720BE9A8500F799ED /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2F0FB31A20BD38830038A5B3 /* SearchViewController.swift */,
+				2F81909920BFBA9D009995CF /* MenuViewController.swift */,
+				2F81909D20BFEBCF009995CF /* MenuViewController2.swift */,
+				2F79D1A520C4E3B7001BE4B3 /* AFLiveCollectionViewCell.swift */,
+				2F79D1A620C4E3B7001BE4B3 /* AFLiveCollectionViewCell.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2FA09B4820BE9A9400F799ED /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2F0FB31C20BD3F510038A5B3 /* Color_extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		2FA09B4920BE9AAB00F799ED /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				2F4F4AB720BC034400219348 /* AppDelegate.swift */,
+				2F0FB31820BCDE6F0038A5B3 /* .swiftlint.yml */,
+				2F4F4ABE20BC034500219348 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		2FA09B4A20BE9AB600F799ED /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2F0FB31520BCD8FB0038A5B3 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2FA09B4B20BE9AC000F799ED /* DataCenter */ = {
+			isa = PBXGroup;
+			children = (
+				2F4F4AE520BC036400219348 /* TodoDAO.swift */,
+			);
+			path = DataCenter;
+			sourceTree = "<group>";
+		};
+		2FA09B4C20BE9AC800F799ED /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				2F4F4ABB20BC034400219348 /* Main.storyboard */,
+				2F4F4AC020BC034500219348 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
 			sourceTree = "<group>";
 		};
 		36A4AAE5044290DD550891CF /* Pods */ = {
@@ -287,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F0FB31920BCDE6F0038A5B3 /* .swiftlint.yml in Resources */,
+				2F79D1A820C4E3B7001BE4B3 /* AFLiveCollectionViewCell.xib in Resources */,
 				2F4F4AC220BC034500219348 /* LaunchScreen.storyboard in Resources */,
 				2F4F4ABF20BC034500219348 /* Assets.xcassets in Resources */,
 				2F4F4ABD20BC034400219348 /* Main.storyboard in Resources */,
@@ -404,7 +468,11 @@
 			files = (
 				2F0FB31D20BD3F510038A5B3 /* Color_extension.swift in Sources */,
 				2F0FB31B20BD38830038A5B3 /* SearchViewController.swift in Sources */,
+				2F81909E20BFEBCF009995CF /* MenuViewController2.swift in Sources */,
 				2F0FB31620BCD8FB0038A5B3 /* NetworkManager.swift in Sources */,
+				2F79D1A720C4E3B7001BE4B3 /* AFLiveCollectionViewCell.swift in Sources */,
+				2F81909B20BFBA9D009995CF /* MenuViewController.swift in Sources */,
+				2FA09B4E20BE9BD200F799ED /* JHSideMenu.swift in Sources */,
 				2F4F4AE620BC036400219348 /* TodoDAO.swift in Sources */,
 				2F4F4AB820BC034400219348 /* AppDelegate.swift in Sources */,
 			);
@@ -495,6 +563,8 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_ACTIVITY_MODE = "";
+				"DEBUG_ACTIVITY_MODE[arch=*]" = disable;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -555,6 +625,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_ACTIVITY_MODE = "";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;

@@ -51,3 +51,12 @@ class CustomSearchController: UISearchController, UISearchBarDelegate {
         }
     }
 }
+
+extension UIViewController {
+
+    static func loadFromNib<T: UIViewController>() -> T {
+
+        return T(nibName: String(describing: self), bundle: nil)
+    }
+
+}
